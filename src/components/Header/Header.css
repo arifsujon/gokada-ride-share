@@ -1,0 +1,26 @@
+.header {
+    position: relative;
+    z-index: 1;
+}
+.logo {
+    height: 50px;
+}
+
+.nav ul{
+    margin: 0;
+    padding: 0;
+}
+.nav li{
+    display: inline-block;
+    margin-left: 40px;
+    vertical-align: middle;
+    
+}
+@media (max-width: 575.98px) { 
+    .header{
+        padding: 0 20px;
+    }
+    .nav li {
+        margin-left: 20px;
+    } 
+}

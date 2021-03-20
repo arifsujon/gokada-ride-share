@@ -1,0 +1,9 @@
+.card-item {
+    border-radius: 10px !important;
+    cursor: pointer;
+}
+@media (max-width: 767.98px) { 
+   .card-item {
+       margin: 70px;
+   } 
+}

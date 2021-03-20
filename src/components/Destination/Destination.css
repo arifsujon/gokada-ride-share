@@ -1,0 +1,12 @@
+.destination input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.destination p {
+    margin-bottom: 8px;
+}
+@media (max-width: 575.98px) { 
+    .destination {
+        padding: 0 30px;
+    } 
+}
