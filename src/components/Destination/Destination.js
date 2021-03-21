@@ -2,6 +2,10 @@ import React from 'react';
 import { useHistory, useParams } from 'react-router';
 import mapImage from '../../images/mapImage.png';
 import './Destination.css';
+import MapSection from '../Map/Map'
+
+import GoogleMapReact from 'google-map-react'
+// import './map.css'
 
 const Destination = () => {
 
@@ -11,6 +15,12 @@ const Destination = () => {
     const handleSubmit = () => {
         history.push(`/destination/${vehicleType}/searchResult`);
     }
+
+    const location = {
+        address: 'comilla',
+        lat: 23.460657,
+        lng: 91.180908,
+      }
 
     
     return (
@@ -28,7 +38,8 @@ const Destination = () => {
                         </form>
                     </div>
                     <div className="col-md-8">
-                        <img className="img-fluid" src={mapImage} alt=""/>
+                        <MapSection location={location} zoomLevel={17} />
+                        {/* <img className="img-fluid" src={mapImage} alt=""/> */}
                     </div>
                 </div>
             </div>
