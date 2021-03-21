@@ -30,8 +30,9 @@ const Destination = () => {
     
     return (
         <div>
-            <div className="container mt-5 destination">
-                <div className="row">
+            <div className="container destination">
+                <hr/>
+                <div className="row mb-5">
                     <div className="col-md-4 left">
                         <form>
                             <p>Pick From</p>

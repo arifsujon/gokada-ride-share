@@ -65,14 +65,8 @@ const Login = () => {
         history.replace(from);
     })
     .catch((error) => {
-        // Handle Errors here.
-        var errorCode = error.code;
-        var errorMessage = error.message;
-        // The email of the user's account used.
-        var email = error.email;
-        // The firebase.auth.AuthCredential type that was used.
-        var credential = error.credential;
-        // ...
+      const errorMessage = error.message;
+      console.log(errorMessage)
     });
   }
   const handleBlur = (e) => {
@@ -157,7 +151,7 @@ const Login = () => {
       <div className="container mt-5">
         <div className="form-section mx-auto">
           <h5>Create an account</h5>
-          <input type="checkbox" onChange={() => setNewUser(!newUser)} name="newUser" id="" />
+          <input className="mr-2" type="checkbox" onChange={() => setNewUser(!newUser)} name="newUser" id="" />
           <label htmlFor="newUser">New User Sign Up</label>
           <form onSubmit={handleSubmit}>
               {newUser && <input name="name" onBlur={handleBlur} type="text" placeholder="Your Name" />}
@@ -166,12 +160,12 @@ const Login = () => {
               <br />
               <input type="password" onBlur={handleBlur} placeholder="Your Password" required name="password" />
               <br />
-              <input className="mb-0" type="submit" value={newUser ? 'Sign Up' : 'Sign In'} />
+              <input className="mb-0 sign-btn" type="submit" value={newUser ? 'Sign Up' : 'Sign In'} />
           </form>
           <p style={{ color: 'red' }}>{user.error}</p>
           { user.success && <p style={{ color: 'green' }}>User {newUser ? 'created' : 'Logged In'} successfully</p>} 
-          <p className="text-center">OR</p>
-          <button style={{width: '100%'}} onClick={handleGoogleSignIn}>Sign In With Google</button>
+          <p className="text-center">or</p>
+          <button className="sign-btn mb-3" style={{width: '100%'}} onClick={handleGoogleSignIn}>Continue with Google</button>
         </div>
           
       </div>

@@ -29,7 +29,7 @@ const SearchResult = () => {
   return (
     <div className="container search-result">
       <hr/>
-      <div className="row">
+      <div className="row mb-5">
         <div className="col-md-4 left">
           <div className="card search-part">
             <ul className="list-group list-group-flush">

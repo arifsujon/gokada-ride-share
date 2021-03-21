@@ -1,9 +1,24 @@
 .form-section {
-    max-width : 500px;
+    max-width: 500px;
+    border: 1px solid gray;
+    padding: 30px 30px;
 }
 .form-section form input {
     width: 100%;
     margin-bottom: 20px;
+    
+    border: 0;
+    border-bottom : 1px solid gray;
+}
+.sign-btn {
+    display: inline-block;
+    padding: 10px 0;
+    background-color: antiquewhite;
+    border: 0;
+    border-bottom : 0 !important;
+}
+.sign-btn:hover {
+    background-color: #00C795;
 }
 @media (max-width: 575.98px) { 
     .form-section {
