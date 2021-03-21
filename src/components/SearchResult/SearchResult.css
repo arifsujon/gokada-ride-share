@@ -1,0 +1,24 @@
+.react-timeline {
+    padding-right: 158px;
+   border-bottom: 0;
+   background-color : lightcoral;
+}
+.search-result .card img {
+    height: 50px;
+    width: 50px;
+}
+.card li.details {
+    margin-left: 40px;
+}
+.card li span.vehicle {
+    margin-left: 130px;
+}
+.search-part {
+    background-color: gray;
+    border:0;
+}
+@media (max-width: 575.98px) { 
+    .search-result .left {
+        margin-bottom: 20px;
+    }
+}
